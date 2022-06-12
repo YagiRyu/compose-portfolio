@@ -8,8 +8,8 @@ object AppStyleSheet : StyleSheet() {
         justifyContent(JustifyContent.Center)
         flexDirection(FlexDirection.Column)
         alignItems(AlignItems.Center)
-        width(100.vw)
-        height(100.vh)
+        color(Color.white)
+        background("#000000")
     }
 
     val footer by style {
@@ -20,5 +20,11 @@ object AppStyleSheet : StyleSheet() {
         paddingBottom(16.px)
         alignItems(AlignItems.Center)
         width(100.vw)
+        background("#000000")
+    }
+
+    val topSectionIconSize by style {
+        width(32.px)
+        marginRight(8.px)
     }
 }

@@ -1,5 +1,7 @@
 import components.Layout
 import content.Footer
+import content.ProfileSection
+import content.SkillsSection
 import content.TopSction
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.renderComposable
@@ -10,6 +12,8 @@ fun main() {
         Style(AppStyleSheet)
         Layout {
             TopSction()
+            ProfileSection()
+            SkillsSection()
             Footer()
         }
     }
