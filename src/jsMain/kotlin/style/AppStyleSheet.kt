@@ -14,7 +14,6 @@ object AppStyleSheet : StyleSheet() {
 
     val footer by style {
         display(DisplayStyle.Flex)
-        position(Position.Fixed)
         bottom(0.px)
         justifyContent(JustifyContent.Center)
         paddingBottom(16.px)
@@ -26,5 +25,11 @@ object AppStyleSheet : StyleSheet() {
     val topSectionIconSize by style {
         width(32.px)
         marginRight(8.px)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                width(24.px)
+            }
+        }
     }
 }

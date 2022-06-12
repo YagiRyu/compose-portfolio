@@ -14,6 +14,18 @@ object Container : StyleSheet(AppStyleSheet) {
         overflow("hidden")
         width(100.vw)
         height(100.vh)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                height(300.px)
+            }
+        }
+    }
+
+    val profileImage by style {
+        marginTop(10.px)
+        borderRadius(r = 100.px)
+        width(200.px)
     }
 
     val topSectionIconContainer by style {

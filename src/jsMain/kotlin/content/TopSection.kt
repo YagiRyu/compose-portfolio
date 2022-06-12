@@ -27,13 +27,21 @@ fun TopSction() {
                 Text(" Ryutaro Yagi")
             }
         }
+
         P(
             attrs = {
                 classes(FontStyle.subTitle)
             }
         ) {
-            Text("Android Engineer")
+            Span(
+                attrs = {
+                    classes(FontStyle.greenTitle)
+                }
+            ) {
+                Text("Android Engineer")
+            }
         }
+
         Div(
             attrs = {
                 classes(Container.topSectionIconContainer)
