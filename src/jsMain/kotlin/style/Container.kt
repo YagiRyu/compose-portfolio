@@ -22,12 +22,6 @@ object Container : StyleSheet(AppStyleSheet) {
         }
     }
 
-    val profileImage by style {
-        marginTop(10.px)
-        borderRadius(r = 100.px)
-        width(200.px)
-    }
-
     val topSectionIconContainer by style {
         flexDirection(FlexDirection.Row)
         display(DisplayStyle.Flex)
@@ -42,6 +36,41 @@ object Container : StyleSheet(AppStyleSheet) {
         justifyContent(JustifyContent.Center)
         width(100.vw)
         height(100.vh)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                height(500.px)
+            }
+        }
+    }
+
+    val profileImage by style {
+        borderRadius(r = 100.px)
+        width(300.px)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                width(200.px)
+            }
+        }
+    }
+
+    val profileTextContainer by style {
+        marginLeft(20.px)
+
+        media(mediaMaxWidth(640.px)) {
+            self style {
+                marginLeft(10.px)
+            }
+        }
+    }
+
+    val profileImageAndTextContainer by style {
+        margin(30.px)
+        display(DisplayStyle.Flex)
+        justifyContent(JustifyContent.SpaceAround)
+        alignItems(AlignItems.Center)
+        flexDirection(FlexDirection.Row)
     }
 
     val skillsSectionContainer by style {
