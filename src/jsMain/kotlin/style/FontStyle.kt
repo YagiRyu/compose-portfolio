@@ -65,7 +65,7 @@ object FontStyle : StyleSheet(AppStyleSheet) {
 
         media(mediaMaxWidth(640.px)) {
             self style {
-                fontSize(20.px)
+                fontSize(16.px)
             }
         }
     }

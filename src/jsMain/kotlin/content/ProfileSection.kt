@@ -22,7 +22,7 @@ fun ProfileSection() {
 
         Div(
             attrs = {
-                classes()
+                classes(Container.profileImageAndTextContainer)
             }
         ) {
             Img(
@@ -31,6 +31,33 @@ fun ProfileSection() {
                     classes(Container.profileImage)
                 }
             )
+            Div(
+                attrs = {
+                    classes(Container.profileTextContainer)
+                }
+            ) {
+                P(
+                    attrs = {
+                        classes(FontStyle.sectionText)
+                    }
+                ) {
+                    Text("やぎりゅう（八木 利生太郎）")
+                }
+                P(
+                    attrs = {
+                        classes(FontStyle.sectionText)
+                    }
+                ) {
+                    Text("AndroidアプリやiOSアプリの開発をやっています。")
+                }
+                P(
+                    attrs = {
+                        classes(FontStyle.sectionText)
+                    }
+                ) {
+                    Text("他だと、CやRustが好きで最近勉強します。")
+                }
+            }
         }
     }
 }
