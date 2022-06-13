@@ -23,12 +23,12 @@ object AppStyleSheet : StyleSheet() {
     }
 
     val topSectionIconSize by style {
-        width(32.px)
+        width(40.px)
         marginRight(8.px)
 
         media(mediaMaxWidth(640.px)) {
             self style {
-                width(24.px)
+                width(26.px)
             }
         }
     }

@@ -27,6 +27,7 @@ object Container : StyleSheet(AppStyleSheet) {
         display(DisplayStyle.Flex)
         alignItems(AlignItems.Center)
         justifyContent(JustifyContent.Center)
+        marginTop(20.px)
     }
 
     val profileSectionContainer by style {

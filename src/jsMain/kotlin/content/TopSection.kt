@@ -41,32 +41,5 @@ fun TopSction() {
                 Text("Android Engineer")
             }
         }
-
-        Div(
-            attrs = {
-                classes(Container.topSectionIconContainer)
-            }
-        ) {
-            A(
-                href = "https://github.com/YagiRyu"
-            ) {
-                Img(
-                    src = "github.png",
-                    attrs = {
-                        classes(AppStyleSheet.topSectionIconSize)
-                    }
-                )
-            }
-            A(
-                href = "https://twitter.com/K3Kcj"
-            ) {
-                Img(
-                    src = "twitter.png",
-                    attrs = {
-                        classes(AppStyleSheet.topSectionIconSize)
-                    }
-                )
-            }
-        }
     }
 }
